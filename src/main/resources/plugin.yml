@@ -2,3 +2,24 @@ name: Cuboid
 main: net.mikera.cuboid.Plugin
 version: 0.0.1
 api-version: 1.17
+
+author: R4sput1n
+commands:
+   cuboid:
+      description: Cuboid control
+      usage: /cuboid
+      permission: cuboid.cuboid
+      permission-message: You don't have <permission>
+      
+permissions:
+    cuboid.*:
+        description: Gives access to all Cuboid commands
+        children:
+            cuboid.cuboid: true
+            cuboid.address: true
+    cuboid.cuboid:
+        description: Allows Cuboid control
+        default: op
+    cuboid.address:
+        description: Sets User Address
+        default: true
