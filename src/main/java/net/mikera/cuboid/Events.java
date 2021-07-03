@@ -27,6 +27,7 @@ public class Events implements Listener {
 			}
 			if (item.getType() == Material.LIME_STAINED_GLASS_PANE) {
 				player.sendMessage(ChatColor.GREEN + "You have selected Yes");
+				
 				player.closeInventory();
 			} else if (e.getSlot() == 4) {
 				player.sendMessage(ChatColor.AQUA + "Please make a selection...");
