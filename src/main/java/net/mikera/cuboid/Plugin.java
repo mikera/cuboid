@@ -7,6 +7,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Plugin extends JavaPlugin {
 	@Override
 	public void onEnable() {
+		getServer().getPluginManager().registerEvents(new Events(), this);
+		Items.init();
 		getLogger().info("Cuboid plugin enabled");
 	}
 
